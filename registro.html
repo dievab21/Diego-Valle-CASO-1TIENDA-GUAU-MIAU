@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Guau&Miau - Registro</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+    <link
+        rel="stylesheet"
+        href="stylesheet.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="home-link">
+
+                HOME
+
+            </a>
+
+
+            <span class="titulo">
+
+                GUAU&MIAU
+
+            </span>
+
+
+            <a
+                href="login.html"
+                class="btn btn-dark btn-sm">
+
+                INICIAR SESIÓN
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="container py-4">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8 col-lg-6">
+
+
+                    <div class="registro-box">
+
+                        <h1 class="titulo-formulario">
+
+                            Registro de usuario
+
+                        </h1>
+
+
+
+                        <form id="registroForm">
+
+                            <div class="mb-2">
+
+                                <label
+                                    for="nombre"
+                                    class="form-label">
+
+                                    NOMBRE COMPLETO
+
+                                </label>
+
+
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    class="form-control"
+                                    maxlength="50">
+
+
+                                <div
+                                    id="errorNombre"
+                                    class="mensaje-error">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-2">
+
+                                <label
+                                    for="correo"
+                                    class="form-label">
+
+                                    CORREO
+
+                                </label>
+
+
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    class="form-control"
+                                    placeholder="usuario@duoc.cl">
+
+
+                                <div
+                                    id="errorCorreo"
+                                    class="mensaje-error">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-2">
+
+                                <label
+                                    for="password"
+                                    class="form-label">
+
+                                    CONTRASEÑA
+
+                                </label>
+
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    class="form-control">
+
+
+                                <div
+                                    id="errorPassword"
+                                    class="mensaje-error">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-2">
+
+                                <label
+                                    for="confirmPassword"
+                                    class="form-label">
+
+                                    CONFIRMAR CONTRASEÑA
+
+                                </label>
+
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    class="form-control">
+
+
+                                <div
+                                    id="errorConfirmPassword"
+                                    class="mensaje-error">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="telefono"
+                                    class="form-label">
+
+                                    TELÉFONO (opcional)
+
+                                </label>
+
+
+                                <input
+                                    type="tel"
+                                    id="telefono"
+                                    class="form-control"
+                                    placeholder="+56912345678">
+
+
+                                <div
+                                    id="errorTelefono"
+                                    class="mensaje-error">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mascotas-titulo">
+
+                                <span>
+
+                                    REGISTRO DE MASCOTA
+
+                                </span>
+
+
+                                <button
+                                    type="button"
+                                    id="agregarMascota"
+                                    class="btn btn-outline-dark btn-sm">
+
+                                    AÑADIR NUEVO REGISTRO
+
+                                </button>
+
+                            </div>
+
+                            <div id="listaMascotas">
+
+
+                                <!-- PRIMERA MASCOTA -->
+
+                                <div class="mascota-box">
+
+
+                                    <label class="form-label">
+
+                                        NOMBRE COMPLETO
+
+                                    </label>
+
+
+                                    <input
+                                        type="text"
+                                        class="form-control nombreMascota"
+                                        maxlength="50">
+
+
+                                    <div class="mt-2">
+
+
+                                        <label class="form-label">
+
+                                            TIPO
+
+                                        </label>
+
+
+                                        <select
+                                            class="form-select tipoMascota">
+
+
+                                            <option value="">
+
+                                                Seleccione un tipo de mascota
+
+                                            </option>
+
+
+                                            <option value="Perro">
+
+                                                Perro
+
+                                            </option>
+
+
+                                            <option value="Gato">
+
+                                                Gato
+
+                                            </option>
+
+
+                                            <option value="Ave">
+
+                                                Ave
+
+                                            </option>
+
+
+                                            <option value="Otro">
+
+                                                Otro
+
+                                            </option>
+
+
+                                        </select>
+
+                                    </div>
+
+                                    <div
+                                        class="mensaje-error errorMascota">
+
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-dark btn-sm eliminarMascota">
+
+                                        ELIMINAR
+
+                                    </button>
+
+
+                                    <div class="clearfix"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div
+                                id="mensajeRegistro"
+                                class="alert d-none mt-3"
+                                role="alert">
+
+                            </div>
+
+                            <div class="text-center mt-4">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-dark">
+
+                                    REGISTRAR
+
+                                </button>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+    <script src="registro.js"></script>
+
+
+</body>
+
+</html>

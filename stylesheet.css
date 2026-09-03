@@ -1,0 +1,283 @@
+body {
+
+    margin: 0;
+
+    background-color: white;
+
+    color: black;
+
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+
+    background-color: #eeeeee;
+
+    border-bottom: 1px solid #777777;
+
+}
+
+
+.navbar {
+
+    min-height: 70px;
+
+    padding: 10px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.home-link {
+
+    color: #0066cc;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+
+}
+
+.titulo {
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+}
+
+.btn {
+
+    border-radius: 0;
+
+}
+
+main {
+
+    min-height: 550px;
+
+}
+
+.inicio {
+
+    margin-top: 80px;
+
+    padding: 40px;
+
+    text-align: center;
+
+}
+
+
+.inicio h1 {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.inicio p {
+
+    font-size: 15px;
+
+}
+
+.login-box {
+
+    background-color: #eeeeee;
+
+    border: 1px solid #777777;
+
+    padding: 12px;
+
+    margin-top: 35px;
+
+}
+
+.login-box .titulo-formulario {
+
+    background-color: #cccccc;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    padding: 8px;
+
+    margin:
+
+        -12px
+
+        -12px
+
+        15px
+
+        -12px;
+
+}
+
+.registro-box {
+
+    background-color: #eeeeee;
+
+    border: 1px solid #777777;
+
+    padding: 30px;
+
+    margin-top: 5px;
+
+}
+
+.titulo-formulario {
+
+    background-color: #cccccc;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    padding: 8px;
+
+    margin-bottom: 15px;
+
+}
+
+.form-label {
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+
+}
+
+.form-control,
+.form-select {
+
+    border-radius: 0;
+
+    border: 1px solid #333333;
+
+    font-size: 13px;
+
+    min-height: 30px;
+
+}
+
+.mascotas-titulo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+.mascota-box {
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #333333;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+}
+
+.mascota-box .eliminarMascota {
+
+    margin-top: 10px;
+
+    float: right;
+
+}
+
+.mensaje-error {
+
+    color: #b00020;
+
+    font-size: 11px;
+
+    margin-top: 3px;
+
+    min-height: 14px;
+
+}
+
+footer {
+
+    background-color: #eeeeee;
+
+    border-top: 1px solid #777777;
+
+    text-align: center;
+
+    padding: 10px;
+
+    font-size: 12px;
+
+}
+
+
+footer p {
+
+    margin: 0;
+
+}
+
+@media (max-width: 576px) {
+
+
+    .navbar {
+
+        padding: 10px 15px;
+
+    }
+
+
+    .titulo {
+
+        font-size: 17px;
+
+    }
+
+
+    .registro-box {
+
+        padding: 20px;
+
+    }
+
+
+    .mascotas-titulo {
+
+        display: block;
+
+    }
+
+
+    .mascotas-titulo .btn {
+
+        margin-top: 8px;
+
+    }
+
+}
