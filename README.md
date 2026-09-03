@@ -67,7 +67,7 @@ FORMATIVA1/
 - no se esta guardando ni el usuario ni la mascota, a que se debe eso?
 Solucion
 Con el bootstrap se hizo un boton para facilitar el registro, mensajes, y la estructura visual, para la adaptación a diferentes pantallas
-
+```
 <div class="container">
 
     <div class="row justify-content-center">
@@ -87,34 +87,47 @@ Con el bootstrap se hizo un boton para facilitar el registro, mensajes, y la est
     </div>
 
 </div>
-
+```
 - Validacion del correo, comprobo que el correo permanezca a duoc@.cl.
-
+```
 if (!correo.endsWith("@duoc.cl")) {
     errorCorreo.textContent =
         "El correo debe utilizar @duoc.cl.";
 }
-
+```
 - Validacion de la contraseña, comprobo que la contraseña posea 8 caracteres. 
-
+```
 if (password.length < 8) {
     errorPassword.textContent =
         "La contraseña debe tener al menos 8 caracteres.";
 }
-
+```
 - Registro de mascota que permite agregar mas de una mascota al formulario.
-
+```
 const mascotaBox = document.createElement("div");
 
 mascotaBox.classList.add("mascota-box");
 
 listaMascotas.appendChild(mascotaBox);
-
+```
 - Para el Login, buscar mediante un correo ingresado que permita comprobar su contraseña posteriormente.
-
+```
 const usuario = usuarios.find(function(usuario) {
     return usuario.correo === correo;
 });
-
+```
+-Solución propuesta y hecha con LocalStore, Guardado de usuarios y mascotas.
+```
+localStorage.setItem(
+    "usuarios",
+    JSON.stringify(usuarios)
+);
+```
+Y el recuperar usuarios, obtiene guardado automáticamente, si no existe crea uno vacio.
+```
+const usuarios =
+    JSON.parse(localStorage.getItem("usuarios")) || [];
+```
 -Ademas de ocupar la implementacion oficial de bootstrap
 https://www.programiz.com/javascript/online-compiler/
+
